@@ -1,0 +1,8 @@
+[user]
+	email = misiulek0w0@gmail.com
+	name = miskyy7507
+[core]
+	editor = nvim
+	autocrlf = input
+[init]
+	defaultBranch = master

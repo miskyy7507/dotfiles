@@ -1,0 +1,2 @@
+--no-mtime
+-o ${HOME}/Videos/yt-dlp/%(title)s\ [%(id)s].%(ext)s
