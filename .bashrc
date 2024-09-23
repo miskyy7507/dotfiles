@@ -54,3 +54,5 @@ time_elapsed=$(((timer_end - timer_start) / 1000000))
 if [ "$time_elapsed" -gt 100 ]; then
 	echo "${HOME}/.bashrc loaded in ${time_elapsed}ms."
 fi
+
+unset timer_start timer_end time_elapsed
