@@ -15,6 +15,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip --color=auto'
 alias diff='diff --color=auto'
+if command -v bat &> /dev/null; then
+	alias cat='bat -pp'
+fi
 
 PS1="\[\e[0m\]\w \[\e[31m\]\${?#0}\[\e[0m\]\\$ "
 
@@ -25,9 +28,6 @@ PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 alias la='ls -lAh'
 alias lat='ls -lAhtr'
-alias cat='bat -pp'
-alias vim='nvim'
-alias youtube-dl='yt-dlp'
 
 export EDITOR='/usr/bin/nano'
 
