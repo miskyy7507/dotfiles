@@ -31,6 +31,9 @@ alias lat='ls -lAhtr'
 
 export EDITOR='/usr/bin/nano'
 
+# used by e.g. man to open man pages in the browser by using the -H option
+export BROWSER=firefox
+
 fm() {
 	if [ -n "$1" ]; then
 		if [ -d "$1" ]; then
