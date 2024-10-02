@@ -1,0 +1,85 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": "Arch_Small",
+    "display": {
+        "size": {
+            "maxPrefix": "MB",
+            "ndigits": 0
+        },
+        "separator": " ",
+        "hideCursor": false,
+        "key": {"paddingLeft": 0, "type": "string", "width": 7}
+    },
+    "modules": [
+        {
+            "type": "title",
+            "key": " host",
+            "color": {"at": "white", "host": "white", "user": "white"}
+        },
+        // {
+        //     "type": "os",
+        //     "key": "    os"
+        // },
+        {
+            "type": "command",
+            "key": "   os",
+            "text": "echo \"$(awk -F'=\"|\"' '/PRETTY_NAME=/{print $2}' /etc/os-release)\" \"$(uname -m)\" | tr '[[:upper:]]' '[[:lower:]]'"
+        },
+        {
+            "type": "kernel",
+            "key": "linux",
+            "format": "{release}"
+        },
+        {
+            "type": "uptime",
+            "key": "   up"
+        },
+        {
+            "type": "packages",
+            "key": " pkgs"
+        },
+        {
+            "type": "shell",
+            "key": "shell"
+        },
+        // {
+        //     "type": "display",
+        //     "compactType": "original",
+        //     "key": "Resolution"
+        // },
+        // "de",
+        // "wm",
+        // "wmtheme",
+        // "theme",
+        // "icons",
+        {
+            "type": "terminal",
+            "key": " term"
+        },
+        // {
+        //     "type": "terminalfont",
+        //     "format": "{/name}{-}{/}{name}{?size} {size}{?}"
+        // },
+        // "cpu",
+        // {
+        //     "type": "gpu",
+        //     "key": "GPU"
+        // },
+        // {
+        //     "type": "memory",
+        //     "format": "{} / {}"
+        // },
+        // "break",
+        {
+            "type": "command",
+            "key": "   ",
+            "text": "echo -e '\\x1b[40;90m▄\\x1b[41;91m▄\\x1b[43;93m▄\\x1b[42;92m▄\\x1b[46;96m▄\\x1b[44;94m▄\\x1b[45;95m▄\\x1b[47;97m▄\\x1b[0m'"
+        }
+        // {
+        //     "type":"colors",
+        //     "block": {"width": 2},
+        //     "paddingLeft": 6
+        // }
+        // "colors"
+    ]
+}
