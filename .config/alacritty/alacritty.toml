@@ -12,15 +12,15 @@ y = -2
 
 [font.bold]
 family = "JetBrainsMonoNL Nerd Font Mono"
-style = "Medium"
+style = "SemiBold"
 
 [font.bold_italic]
 family = "JetBrainsMonoNL Nerd Font Mono"
-style = "Medium Italic"
+style = "SemiBold Italic"
 
 [font.italic]
 family = "JetBrainsMonoNL Nerd Font Mono"
-style = "Italic"
+style = "Light Italic"
 
 [font.normal]
 family = "JetBrainsMonoNL Nerd Font Mono"
