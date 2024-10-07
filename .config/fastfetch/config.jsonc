@@ -1,7 +1,8 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "small"
+        "type": "small",
+        "printRemaining": true
     },
     "display": {
         "size": {
@@ -16,13 +17,10 @@
         {
             "type": "title",
             "key": " host",
-            "color": {"at": "white", "host": "white", "user": "white"}
+            "format": "{1}@{2}"
         },
-        // {
-        //     "type": "os",
-        //     "key": "    os"
-        // },
         {
+            // oof, i don't think there's a way to format text to lowercase with built-in fastfetch modules
             "type": "command",
             "key": "   os",
             "text": "echo \"$(awk -F'=\"|\"' '/PRETTY_NAME=/{print $2}' /etc/os-release)\" \"$(uname -m)\" | tr '[[:upper:]]' '[[:lower:]]'"
@@ -44,11 +42,6 @@
             "type": "shell",
             "key": "shell"
         },
-        // {
-        //     "type": "display",
-        //     "compactType": "original",
-        //     "key": "Resolution"
-        // },
         // "de",
         // "wm",
         // "wmtheme",
@@ -62,26 +55,17 @@
         //     "type": "terminalfont",
         //     "format": "{/name}{-}{/}{name}{?size} {size}{?}"
         // },
-        // "cpu",
         // {
-        //     "type": "gpu",
-        //     "key": "GPU"
-        // },
-        // {
-        //     "type": "memory",
-        //     "format": "{} / {}"
-        // },
-        // "break",
+        //     "type": "colors",
+        //     "block": {
+        //         "width": 2
+        //     }
+        // }
         {
             "type": "command",
             "key": "   ",
             "text": "/bin/echo -e '\\x1b[40;90m▄\\x1b[41;91m▄\\x1b[43;93m▄\\x1b[42;92m▄\\x1b[46;96m▄\\x1b[44;94m▄\\x1b[45;95m▄\\x1b[47;97m▄\\x1b[0m'"
-        }
-        // {
-        //     "type":"colors",
-        //     "block": {"width": 2},
-        //     "paddingLeft": 6
-        // }
-        // "colors"
+        },
+        "break"
     ]
 }
