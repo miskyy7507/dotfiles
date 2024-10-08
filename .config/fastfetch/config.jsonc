@@ -2,7 +2,8 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "type": "small",
-        "printRemaining": true
+        "printRemaining": true,
+        "padding": {"right": 1, "left": 1}
     },
     "display": {
         "size": {
@@ -11,45 +12,55 @@
         },
         "separator": " ",
         "hideCursor": false,
-        "key": {"paddingLeft": 0, "type": "string", "width": 7}
+        "key": {"paddingLeft": 0, "type": "string", "width": 8}
     },
     "modules": [
         {
             "type": "title",
-            "key": " host",
+            "key": "  user",
             "format": "{1}@{2}"
         },
+        // {
+        //     // oof, i don't think there's a way to format text to lowercase with built-in fastfetch modules
+        //     "type": "command",
+        //     "key": "distro",
+        //     "text": "echo \"$(awk -F'=\"|\"' '/PRETTY_NAME=/{print $2}' /etc/os-release)\" \"$(uname -m)\" | tr '[[:upper:]]' '[[:lower:]]'"
+        // },
         {
-            // oof, i don't think there's a way to format text to lowercase with built-in fastfetch modules
-            "type": "command",
-            "key": "   os",
-            "text": "echo \"$(awk -F'=\"|\"' '/PRETTY_NAME=/{print $2}' /etc/os-release)\" \"$(uname -m)\" | tr '[[:upper:]]' '[[:lower:]]'"
+            "type": "os",
+            "key": "distro"
         },
         {
             "type": "kernel",
-            "key": "linux",
+            "key": "kernel",
             "format": "{release}"
         },
         {
             "type": "uptime",
-            "key": "   up"
+            "key": "uptime"
         },
         {
             "type": "packages",
-            "key": " pkgs"
+            "key": "  pkgs"
         },
         {
             "type": "shell",
-            "key": "shell"
+            "key": " shell"
         },
-        // "de",
-        // "wm",
+        // {
+        //     "type": "de",
+        //     "key": "    de"
+        // },
+        {
+            "type": "wm",
+            "key": "    wm"
+        },
         // "wmtheme",
         // "theme",
         // "icons",
         {
             "type": "terminal",
-            "key": " term"
+            "key": "  term"
         },
         // {
         //     "type": "terminalfont",
@@ -62,10 +73,9 @@
         //     }
         // }
         {
-            "type": "command",
+            "type": "custom",
             "key": "   ",
-            "text": "/bin/echo -e '\\x1b[40;90m▄\\x1b[41;91m▄\\x1b[43;93m▄\\x1b[42;92m▄\\x1b[46;96m▄\\x1b[44;94m▄\\x1b[45;95m▄\\x1b[47;97m▄\\x1b[0m'"
-        },
-        "break"
+            "format": "\u001b[40;90m\u2584\u001b[41;91m\u2584\u001b[43;93m\u2584\u001b[42;92m\u2584\u001b[46;96m\u2584\u001b[44;94m\u2584\u001b[45;95m\u2584\u001b[47;97m\u2584\u001b[0m"
+        }
     ]
 }
