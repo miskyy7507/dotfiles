@@ -1,0 +1,8 @@
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = master
+[alias]
+	ls-assume-unchanged = !git ls-files -v | grep \"^[[:lower:]]\"
+[include]
+	path = ~/.gitconfig.local
