@@ -1,0 +1,3 @@
+# NVMe drives seems to have the best performance with no I/O scheduler
+# https://www.phoronix.com/review/linux-56-nvme
+ACTION=="add|change", KERNEL=="nvme[0-9]*", ATTR{queue/scheduler}="none"

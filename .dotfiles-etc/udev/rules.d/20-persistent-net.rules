@@ -1,0 +1,3 @@
+# Set network adapter names based on the MAC address
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="<main ethernet nic mac address>", NAME="eth0"
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="<main wireless nic mac address>", NAME="wlan0"
