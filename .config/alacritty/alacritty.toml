@@ -11,19 +11,19 @@ x = 0
 y = -2
 
 [font.bold]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "JetBrainsMonoNL Nerd Font"
 style = "SemiBold"
 
 [font.bold_italic]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "JetBrainsMonoNL Nerd Font"
 style = "SemiBold Italic"
 
 [font.italic]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "JetBrainsMonoNL Nerd Font"
 style = "Light Italic"
 
 [font.normal]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "JetBrainsMonoNL Nerd Font"
 style = "Light"
 
 [window]
