@@ -1,0 +1,59 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "printRemaining": true,
+        "padding": {"right": 3, "left": 1}
+    },
+    "display": {
+        "size": {
+            "maxPrefix": "MB",
+            "ndigits": 0
+        },
+        "separator": " ",
+        "hideCursor": false,
+        "key": {"paddingLeft": 0, "type": "string", "width": 4}
+    },
+    "modules": [
+        {
+            "type": "title",
+            "key": "\uf007",
+            "format": "{1}@{2}"
+        },
+        {
+            "type": "os",
+            "key": "\uf303"
+        },
+        {
+            "type": "kernel",
+            "key": "\uebc6",
+            "format": "{release}"
+        },
+        {
+            "type": "uptime",
+            "key": "\uf43a"
+        },
+        {
+            "type": "packages",
+            "key": "\uf487",
+            "format": "{1} ({?2}pacman, {?}{?4}dpkg, {?}{?5}rpm, {?}{?6}emerge, {?}{?7}eopkg, {?}{?8}xbps, {?}{?9}nix-system, {?}{?10}nix-user, {?}{?11}nix-default, {?}{?12}apk, {?}{?13}pkg, {?}{?14}flatpak, {?}{?16}snap, {?}{?17}brew, {?}{?19}MacPorts, {?}{?20}scoop, {?}{?21}choco, {?}{?22}pkgtool, {?}{?23}paludis, {?}{?24}winget, {?}{?25}opkg, {?}{?26}am, {?}{?27}sorcery, {?}{?28}lpkg, {?}{?29}lpkgbuild, {?}{?30}guix-system, {?}{?31}guix-user, {?}{?32}guix-home, {?}{?33}linglong, {?}{?34}pacstall, {?}\u0008\u0008)"
+        },
+        {
+            "type": "wm",
+            "key": "\uf2d2"
+        },
+        {
+            "type": "shell",
+            "key": "\uf4b5"
+        },
+        {
+            "type": "terminal",
+            "key": "\uf489"
+        },
+        {
+            "type": "custom",
+            "key": "\ue22b",
+            "format": "\u001b[40;90m\u2584\u001b[41;91m\u2584\u001b[43;93m\u2584\u001b[42;92m\u2584\u001b[46;96m\u2584\u001b[44;94m\u2584\u001b[45;95m\u2584\u001b[47;97m\u2584\u001b[0m"
+        }
+    ]
+}
