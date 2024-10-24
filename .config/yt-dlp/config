@@ -1,2 +1,5 @@
 --no-mtime
--o ${HOME}/Videos/yt-dlp/%(title)s\ [%(id)s].%(ext)s
+-P ${HOME}/Videos/yt-dlp/
+-P temp:/tmp/yt-dlp/
+-o %(title)s\ [%(id)s].%(ext)s
+
