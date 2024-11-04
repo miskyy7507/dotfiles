@@ -8,7 +8,8 @@
     "display": {
         "size": {
             "maxPrefix": "MB",
-            "ndigits": 0
+            "ndigits": 0,
+            "binaryPrefix": "jedec"
         },
         "separator": " ",
         "hideCursor": false,
@@ -22,7 +23,7 @@
         },
         {
             "type": "os",
-            "key": "\uf303"
+            "key": "\uf303" // currently hardcoded to arch linux logo
         },
         {
             "type": "kernel",
@@ -32,6 +33,11 @@
         {
             "type": "uptime",
             "key": "\uf43a"
+        },
+        {
+            "type": "memory",
+            "key": "\uefc5",
+            "format": "{1} / {2}"
         },
         {
             "type": "packages",

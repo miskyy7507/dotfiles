@@ -8,11 +8,12 @@
     "display": {
         "size": {
             "maxPrefix": "MB",
-            "ndigits": 0
+            "ndigits": 0,
+            "binaryPrefix": "jedec"
         },
         "separator": " ",
         "hideCursor": false,
-        "key": {"paddingLeft": 0, "type": "string", "width": 8}
+        "key": {"paddingLeft": 1, "type": "string", "width": 9}
     },
     "modules": [
         {
@@ -38,6 +39,11 @@
         {
             "type": "uptime",
             "key": "uptime"
+        },
+        {
+            "type": "memory",
+            "key": "memory",
+            "format": "{1} / {2}"
         },
         {
             "type": "packages",
