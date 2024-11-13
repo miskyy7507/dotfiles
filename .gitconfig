@@ -5,4 +5,5 @@
 [alias]
 	ls-assume-unchanged = !git ls-files -v | grep \"^[[:lower:]]\"
 [include]
+	# put personal information like 'user.name' and 'user.email' in ~/.gitconfig.local file
 	path = ~/.gitconfig.local
