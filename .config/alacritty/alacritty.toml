@@ -1,3 +1,4 @@
+[general]
 import = ["/home/miskyy/.config/alacritty/colors/tokyo-night.toml"]
 
 [env]
