@@ -7,9 +7,8 @@
     },
     "display": {
         "size": {
-            "maxPrefix": "MB",
-            "ndigits": 0,
-            "binaryPrefix": "jedec"
+            "maxPrefix": "GB",
+            "ndigits": 1
         },
         "separator": " ",
         "hideCursor": false,
@@ -18,8 +17,8 @@
     "modules": [
         {
             "type": "title",
-            "key": "\uf007",
-            "format": "{1}@{2}"
+            "key": "  ",
+            "format": "{user-name-colored}@{host-name-colored}"
         },
         {
             "type": "os",
@@ -37,12 +36,12 @@
         {
             "type": "memory",
             "key": "\uefc5",
-            "format": "{1} / {2}"
+            "format": "{used} / {total}"
         },
         {
             "type": "packages",
             "key": "\uf487",
-            "format": "{1} ({?2}pacman, {?}{?4}dpkg, {?}{?5}rpm, {?}{?6}emerge, {?}{?7}eopkg, {?}{?8}xbps, {?}{?9}nix-system, {?}{?10}nix-user, {?}{?11}nix-default, {?}{?12}apk, {?}{?13}pkg, {?}{?14}flatpak, {?}{?16}snap, {?}{?17}brew, {?}{?19}MacPorts, {?}{?20}scoop, {?}{?21}choco, {?}{?22}pkgtool, {?}{?23}paludis, {?}{?24}winget, {?}{?25}opkg, {?}{?26}am, {?}{?27}sorcery, {?}{?28}lpkg, {?}{?29}lpkgbuild, {?}{?30}guix-system, {?}{?31}guix-user, {?}{?32}guix-home, {?}{?33}linglong, {?}{?34}pacstall, {?}\u0008\u0008)"
+            "format": "{1} ({?2}pacman, {?}{?3}pacman-branch, {?}{?4}dpkg, {?}{?5}rpm, {?}{?6}emerge, {?}{?7}eopkg, {?}{?8}xbps, {?}{?37}nix, {?}{?12}apk, {?}{?13}pkg, {?}{?38}flatpak, {?}{?16}snap, {?}{?39}brew, {?}{?19}MacPorts, {?}{?20}scoop, {?}{?21}choco, {?}{?22}pkgtool, {?}{?23}paludis, {?}{?24}winget, {?}{?25}opkg, {?}{?26}am, {?}{?27}sorcery, {?}{?28}lpkg, {?}{?29}lpkgbuild, {?}{?40}guix, {?}{?33}linglong, {?}{?34}pacstall, {?}{?35}mport, {?}{?36}qi, {?}\u0008\u0008)"
         },
         {
             "type": "wm",
@@ -59,7 +58,7 @@
         {
             "type": "custom",
             "key": "\ue22b",
-            "format": "\u001b[40;90m\u2584\u001b[41;91m\u2584\u001b[43;93m\u2584\u001b[42;92m\u2584\u001b[46;96m\u2584\u001b[44;94m\u2584\u001b[45;95m\u2584\u001b[47;97m\u2584\u001b[0m"
+            "format": "{#40;90}\u2584{#41;91}\u2584{#43;93}\u2584{#42;92}\u2584{#46;96}\u2584{#44;94}\u2584{#45;95}\u2584{#47;97}\u2584"
         }
     ]
 }
