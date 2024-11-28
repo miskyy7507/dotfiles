@@ -1,5 +1,5 @@
 [general]
-import = ["/home/miskyy/.config/alacritty/colors/tokyo-night.toml"]
+import = ["~/.config/alacritty/colors/tokyo-night.toml"]
 
 [env]
 # uncomment below if scaling in alacritty is wrong (too big or too small font)
