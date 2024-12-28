@@ -49,7 +49,7 @@ fm() {
 #bind '"\e[A": history-search-backward'
 #bind '"\e[B": history-search-forward'
 
-. ".bashrc.local"
+. "$HOME/.bashrc.local"
 
 # STOP TIMER to measure bashrc load time performance
 # - DO NOT INSERT ANYTHING BELOW
